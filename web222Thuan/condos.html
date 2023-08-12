@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homepage.css">
+    
+    <div class="topnav">
+        <a href="homepage.html">Home</a>
+        <a href="ListingPage.html">ListingPage</a>
+        <a href="SalePage.html">Sale</a>
+        <a href="Site.html">Credit</a>
+        <a href="Contact.html" class="split">Contact Form</a>
+      </div>
+</head>
+<body>
+    <!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="house1.webp" style="width:100%"style="height:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="house2.webp" style="width:100%"style="height:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="townhouse.webp" style="width:100%"style="height:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="townhouse2.webp" style="width:100%"style="height:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="Condos1.webp" style="width:100%"style="height:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="condos2.webp" style="width:100%"style="height:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="house1.webp" style="width:100%" style="height:100%" onclick="currentSlide(1)" alt="House in Mississauga">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="house2.webp" style="width:100%"style="height:100%" onclick="currentSlide(2)" alt="House in Old Weston Rd,Toronto">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="townhouse.webp" style="width:100%" style="height:100%"onclick="currentSlide(3)" alt="Townhouse in Brampton">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="townhouse2.webp" style="width:100%"style="height:100%" onclick="currentSlide(4)" alt="Townhouse in Vaughan">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Condos1.webp" style="width:100%" style="height:100%"onclick="currentSlide(5)" alt="Condo in Blue Jays Way, Toronto">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="condos2.webp" style="width:100%" style="height:100%"onclick="currentSlide(6)" alt="Condo in Queen St, Toronto">
+    </div>
+  </div>
+</div>
+<script src="listing.js"></script>
+<section class="property-buttons-section">
+    <button onclick="window.location.href = 'house.html';">House</button>
+    <button onclick="window.location.href = 'townhouse.html';">Townhouse</button>
+    <button onclick="window.location.href = 'condos.html';">Condos</button>
+</section>
+<div class="property-card">
+    <div class="property-image">
+        <img src="Condos1.webp" alt="Condos 1">
+    </div>
+    <div class="property-details">
+        <div class="property-title">Condo in Toronto</div>
+        <div class="property-price">$499,900</div>
+        <div class="property-address">115 Blue Jays Way #2706</div>
+        <div class="property-location">Toronto, ON</div>
+    </div>
+</div>
+<div class="property-card">
+    <div class="property-image">
+        <img src="condos2.webp" alt="Condos 2">
+    </div>
+    <div class="property-details">
+        <div class="property-title">Condo in Toronto</div>
+        <div class="property-price">$509,000</div>
+        <div class="property-address">215 Queen St W UNIT 1116</div>
+        <div class="property-location">Toronto, ON</div>
+    </div>
+</div>
+</body>
+</body>
+<footer>
+    <section class="citation">
+        <p>Designed by <span>Vu Duc Thuan Tran</span></p>
+    </section>
+  </footer>
+</html>
